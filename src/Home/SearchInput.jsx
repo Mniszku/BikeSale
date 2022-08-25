@@ -5,9 +5,9 @@ import { styled } from "@mui/material/styles";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: "#BEBEBE",
-  marginLeft: 0,
+  borderRadius: 20,
+  backgroundColor: "white",
+  marginTop: 80,
   width: "2vw",
   [theme.breakpoints.up("sm")]: {
     marginLeft: theme.spacing(1),
@@ -26,7 +26,7 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
+  color: "#000000",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
 

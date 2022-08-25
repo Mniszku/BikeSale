@@ -2,19 +2,25 @@ import Grid from "@mui/material/Grid";
 import MenuButton from "../MenuButton/MenuButton";
 import Box from "@mui/material/Box";
 import SearchInput from "./SearchInput";
+
 const Home = () => {
   return (
     <>
-      <Box sx={{ marginTop: 15, width: "100%" }}>
+      <Box
+        style={{ backgroundColor: "darkgrey" }}
+        sx={{ width: "100%", height: 150 }}
+      >
         <Grid
           container
           alignContent="center"
           alignItems="center"
           justifyContent="space-evenly"
-          sx={{ mt: 2 }}
         >
-          <Grid item xs={1}></Grid>
-          <Grid item xs={1}>
+          <Grid item xs={7}></Grid>
+          {/* <Grid item xs={1} sm={4} md={2} lg={2} xl={2}>
+            <img src={} alt="" />
+          </Grid> */}
+          <Grid item xs={5}>
             <SearchInput />
           </Grid>
         </Grid>
