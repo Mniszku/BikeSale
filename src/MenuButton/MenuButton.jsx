@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
 const MenuButton = (props) => {
-  const { buttonName, path, backgroundColor, color, width } = props;
+  const { icon, buttonName, path, backgroundColor, color, width } = props;
   return (
     <>
       <Button
@@ -30,6 +30,9 @@ const MenuButton = (props) => {
           justifyContent="center"
           alignItems="baseline"
         >
+          <Grid item xs={12}>
+            <img src={icon} alt="" />
+          </Grid>
           <Grid item xs={12}>
             <span>{buttonName}</span>
           </Grid>

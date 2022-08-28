@@ -2,7 +2,7 @@ import Grid from "@mui/material/Grid";
 import MenuButton from "../MenuButton/MenuButton";
 import Box from "@mui/material/Box";
 import SearchInput from "./SearchInput";
-
+import Logo from "../Logo/bike.png";
 const Home = () => {
   return (
     <>
@@ -12,17 +12,33 @@ const Home = () => {
       >
         <Grid
           container
+          direction="row"
           alignContent="center"
           alignItems="center"
           justifyContent="space-evenly"
         >
-          <Grid item xs={7}></Grid>
-          {/* <Grid item xs={1} sm={4} md={2} lg={2} xl={2}>
-            <img src={} alt="" />
-          </Grid> */}
-          <Grid item xs={5}>
+          <Grid item xs={3}></Grid>
+          <Grid item xs={3}>
+            <img
+              style={{ width: "15vw", marginTop: "2vw" }}
+              src={Logo}
+              alt=""
+            />
+          </Grid>
+
+          <Grid item xs={3}>
             <SearchInput />
           </Grid>
+          <Grid item xs={3}>
+            <MenuButton
+              backgroundColor={"#920303"}
+              width={110}
+              color={"#000000"}
+              path={"/"}
+              buttonName={"Koszyk"}
+            />
+          </Grid>
+          <Grid item xs={3}></Grid>
         </Grid>
       </Box>
       <Grid
