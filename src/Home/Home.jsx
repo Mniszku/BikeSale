@@ -3,11 +3,12 @@ import MenuButton from "../MenuButton/MenuButton";
 import Box from "@mui/material/Box";
 import SearchInput from "./SearchInput";
 import Logo from "../Logo/bike.png";
+
 const Home = () => {
   return (
     <>
       <Box
-        style={{ backgroundColor: "darkgrey" }}
+        style={{ backgroundColor: "#3D3D3B" }}
         sx={{ width: "100%", height: 150 }}
       >
         <Grid
@@ -18,7 +19,7 @@ const Home = () => {
           justifyContent="space-evenly"
         >
           <Grid item xs={3}></Grid>
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             <img
               style={{ width: "15vw", marginTop: "2vw" }}
               src={Logo}
@@ -26,13 +27,15 @@ const Home = () => {
             />
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={2}>
             <SearchInput />
           </Grid>
-          <Grid item xs={3}>
+
+          <Grid item xs={3} sx={{ mt: 10 }}>
             <MenuButton
               backgroundColor={"#920303"}
-              width={110}
+              width={"10vw"}
+              height={"2.3vw"}
               color={"#000000"}
               path={"/"}
               buttonName={"Koszyk"}

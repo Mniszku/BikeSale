@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
 const MenuButton = (props) => {
-  const { icon, buttonName, path, backgroundColor, color, width } = props;
+  const { icon, buttonName, path, backgroundColor, color, width, height } =
+    props;
   return (
     <>
       <Button
@@ -17,10 +18,11 @@ const MenuButton = (props) => {
           fontsize: 14,
           lineheight: 14,
           width: width ? width : 97,
-          height: 57,
+          height: height ? height : 57,
           color: "black",
           borderRadius: 10,
           textAlign: "center",
+
           color: color,
         }}
       >
