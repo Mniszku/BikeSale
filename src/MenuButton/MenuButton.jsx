@@ -16,28 +16,19 @@ const MenuButton = (props) => {
           fontstyle: "normal",
           fontweight: 400,
           fontsize: 14,
-          lineheight: 14,
+          lineheight: 12,
           width: width ? width : 97,
           height: height ? height : 57,
           color: "black",
           borderRadius: 10,
-          textAlign: "center",
-
           color: color,
         }}
       >
-        <Grid
-          container
-          direction="row"
-          justifyContent="center"
-          alignItems="baseline"
-        >
-          <Grid item xs={12}>
-            <img src={icon} alt="" />
-          </Grid>
-          <Grid item xs={12}>
-            <span>{buttonName}</span>
-          </Grid>
+        <Grid item xs={12}>
+          <img src={icon} alt="" />
+        </Grid>
+        <Grid item xs={12}>
+          <span style={{ marginRight: "1.2vw" }}>{buttonName}</span>
         </Grid>
       </Button>
     </>

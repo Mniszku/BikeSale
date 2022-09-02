@@ -3,6 +3,7 @@ import MenuButton from "../MenuButton/MenuButton";
 import Box from "@mui/material/Box";
 import SearchInput from "./SearchInput";
 import Logo from "../Logo/bike.png";
+import AutoPlay from "../AutoPlay/AutoPlay";
 
 const Home = () => {
   return (
@@ -34,7 +35,7 @@ const Home = () => {
           <Grid item xs={3} sx={{ mt: 10 }}>
             <MenuButton
               backgroundColor={"#920303"}
-              width={"10vw"}
+              width={"6vw"}
               height={"2.3vw"}
               color={"#000000"}
               path={"/"}
@@ -51,51 +52,52 @@ const Home = () => {
         justify="flex-start"
         sx={{ mt: 2 }}
       >
-        <Grid item xs={3}></Grid>
-        <Grid item xs={9}>
+        <Grid item xs={4}></Grid>
+        <Grid item xs={8}>
           <MenuButton
             width={110}
             color={"#000000"}
             path={"/"}
             buttonName={"Rowery"}
           />
+
           <MenuButton
-            width={150}
-            color={"#000000"}
-            path={"/"}
-            buttonName={"Rowery Elektryczne"}
-          />
-          <MenuButton
-            width={105}
+            width={110}
             color={"#000000"}
             path={"/"}
             buttonName={"Akcesoria"}
           />
           <MenuButton
-            width={105}
+            width={110}
             color={"#000000"}
             path={"/"}
             buttonName={"Części"}
           />
           <MenuButton
-            width={105}
+            width={110}
             color={"#000000"}
             path={"/"}
             buttonName={"Wyprzedaż"}
           />
           <MenuButton
-            width={105}
+            width={110}
             color={"#000000"}
             path={"/"}
             buttonName={"Serwis"}
           />
           <MenuButton
-            width={105}
+            width={110}
             color={"#000000"}
             path={"/"}
             buttonName={"Kontakt"}
           />
         </Grid>
+
+        <Grid item xs={3}></Grid>
+        <Grid item xs={6}>
+          <AutoPlay />
+        </Grid>
+        <Grid item xs={3}></Grid>
       </Grid>
     </>
   );
