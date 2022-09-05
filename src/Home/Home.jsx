@@ -19,8 +19,8 @@ const Home = () => {
           alignItems="center"
           justifyContent="space-evenly"
         >
-          <Grid item xs={3}></Grid>
-          <Grid item xs={4}>
+          <Grid item xs={2}></Grid>
+          <Grid item xs={5}>
             <img
               style={{ width: "15vw", marginTop: "2vw" }}
               src={Logo}
@@ -34,15 +34,23 @@ const Home = () => {
 
           <Grid item xs={3} sx={{ mt: 10 }}>
             <MenuButton
-              backgroundColor={"#920303"}
+              backgroundColor={"#66CCFF"}
               width={"6vw"}
               height={"2.3vw"}
               color={"#000000"}
               path={"/"}
               buttonName={"Koszyk"}
             />
+
+            <MenuButton
+              backgroundColor={"#66CCFF"}
+              width={"6vw"}
+              height={"2.3vw"}
+              color={"#000000"}
+              path={"/"}
+              buttonName={"Zaloguj"}
+            />
           </Grid>
-          <Grid item xs={3}></Grid>
         </Grid>
       </Box>
       <Grid

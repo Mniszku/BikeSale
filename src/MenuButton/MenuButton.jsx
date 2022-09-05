@@ -22,13 +22,14 @@ const MenuButton = (props) => {
           color: "black",
           borderRadius: 10,
           color: color,
+          textAlign: " center",
         }}
       >
         <Grid item xs={12}>
           <img src={icon} alt="" />
         </Grid>
         <Grid item xs={12}>
-          <span style={{ marginRight: "1.2vw" }}>{buttonName}</span>
+          <span style={{ marginRight: "1.3vw" }}>{buttonName}</span>
         </Grid>
       </Button>
     </>

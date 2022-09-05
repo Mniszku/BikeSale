@@ -55,7 +55,7 @@ const MediaCard = (props) => {
               <Button
                 style={{
                   textTransform: "none",
-                  background: "#920303",
+                  background: "#66CCFF",
                   borderRadius: 10,
                   border: "none",
                   height: "2vw",
@@ -64,7 +64,7 @@ const MediaCard = (props) => {
                   fontSize: "0.7vw",
                 }}
               >
-                Sprawdź ofertę!
+                <p style={{ color: "black" }}> Sprawdź ofertę!</p>
               </Button>
             </div>
           </div>
