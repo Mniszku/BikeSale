@@ -48,8 +48,8 @@ const MediaCard = (props) => {
             {IconButtons}
             <div
               style={{
-                marginTop: "13vw",
-                marginLeft: "14vw",
+                marginTop: "20vw",
+                marginLeft: "22vw",
               }}
             >
               <Button

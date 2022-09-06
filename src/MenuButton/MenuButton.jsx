@@ -29,7 +29,9 @@ const MenuButton = (props) => {
           <img src={icon} alt="" />
         </Grid>
         <Grid item xs={12}>
-          <span style={{ marginRight: "1.3vw" }}>{buttonName}</span>
+          <span style={{ marginRight: "3vw", fontSize: "0.8vw" }}>
+            {buttonName}
+          </span>
         </Grid>
       </Button>
     </>
